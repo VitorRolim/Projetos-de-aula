@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <title>Formulario</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Formulario para inscrição do trabalho</h1>
+    </header>
+    <div id="container">
+        <form class="formulario" action="formulario">
+            <fieldset class="grupo">
+                <div id="nome">
+                    <label for="name">Nome:</label><br>
+                    <input type="text" name="name" id="nome" size="50" required placeholder="Digite o seu nome">
+                </div>
+
+                <div id="email">
+                    <label for="email">Email:</label><br>
+                    <input type="email" name="email" size="50" id="email" required placeholder="Digite o seu email">
+                </div>
+
+                <div id="idade">
+                    <label for="idade">Idade:</label><br>
+                    <input type="number" name="age"  id="idade" size="40" placeholder="Digite a sua idade">
+                </div>
+            </fieldset>
+
+            <div id="situacao">
+                <label for="situacao">Em que situação você está?</label><br>
+                <select name="opcoes" id="opcoes">
+                    <option value="student">Estudante</option>
+                    <option value="ftj">Trabalho integral</option>
+                    <option value="ftl">Trabalho meio-periodo</option>
+                    <option value="pnts">Prefiro não dizer</option>
+                    <option value="other">Outro</option>
+                </select>
+            </div>
+
+            <div id="recomendacao">
+                <label for="recomendacao">Você recomendaria freeCodeCamp para um amigo?</label><br>
+                <input type="radio" name="opc1" id="opc1">
+                <label for="opcao1">Definitivamente</label><br>
+                <input type="radio" name="opc2" id="opc2">
+                <label for="opcao2">Talvez</label><br>
+                <input type="radio" name="opc3" id="opc3">
+                <label for="opcao3">Talvez não</label>
+            </div>
+
+            <div id="rank">
+                <label for="rank">Qual a sua característica favorita do freeCodeCamp? </label><br>
+                <select name="opcoes2" id="opcoes2">
+                    <option value="challenges">Desafios</option>
+                    <option value="Projects">Projetos</option>
+                    <option value="Community">Comunidade</option>
+                    <option value="Open Source">Código aberto</option>
+                </select>
+            </div>
+
+            <div id="feedback">
+                <label for="feedback">O que você gostaria que fosse melhorado?</label><br>
+                <input type="checkbox" name="frontpj" id="frontpj">
+                <label for="op1">Projetos front-ends</label><br>
+                <input type="checkbox" name="backpj" id="backpj">
+                <label for="op2">Projetos back-ends</label><br>
+                <input type="checkbox" name="challenges1" id="challenges1">
+                <label for="op3">Desafios</label><br>
+                <input type="checkbox" name="opc" id="opc">
+                <label for="op4">Comunidade Código livre</label><br>
+                <input type="checkbox" name="ghr" id="ghr">
+                <label for="op5">Salas de ajuda em GIT</label><br>
+                <input type="checkbox" name="videos" id="videos">
+                <label for="op6">Videos</label><br>
+                <input type="checkbox" name="CM" id="CM">
+                <label for="op7">Encontros em cidades</label><br>
+                <input type="checkbox" name="wiki" id="wiki">
+                <label for="op8">Wiki</label><br>
+                <input type="checkbox" name="forum" id="forum">
+                <label for="op9">Forum</label><br>
+                <input type="checkbox" name="atc" id="atc">
+                <label for="op10">Cursos Adicionais</label><br>
+            </div>
+            <br>
+
+            <div id="textofinal">
+                Comentários ou sugestões?<br>
+                <textarea class="textoa" name="comentarios" id="comentarios" cols="25" rows="5"></textarea><br>
+                <input id="submit" type="submit" value="enviar">
+            </div>
+
+
+        </form>
+    </div>
+</body>
+
+</html>
