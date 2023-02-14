@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+/*Criando div */
+#container{
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+/*Criando uma div no centro para realizar o calculo do imc*/
+.filha{
+    height: 600px;
+    width: 400px;
+    background-color: #eead2d;
+    color: black;
+    margin-top: 200px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 7px;
+    text-align: center;
+}
+/*Estilazando o h1 da filha*/
+.filha h1{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.filha h2{
+    display: inline;
+}
+
+/*Criando a area que retorna o texto com o resultado*/
+#areatexto{
+    background-color: black;
+    color: #eead2d;
+    width: 300px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+/*Personalizando e alinhando os input*/
+.filha input{
+    border: none;
+    height: 50px;
+    margin: 5px 0px 5px 50px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.filha .input2{
+    margin-left: 50px;
+}
+.filha .input3{
+    margin-left: 60px;
+}
+.filha form{
+    margin: 50px 10px 20px 50px;
+}
+/*Estilizando o botao*/
+.filha button{
+    margin: 40px 0px 40px 0px;
+    height: 30px;
+    width: 300px;
+    color: #eead2d;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.filha button:hover{
+    cursor: pointer;
+    background-color: #eead2d;
+    color: black;
+    border: 1px solid black;
+    transition: 1ms;
+}
+
+
+/*Estilizando o textarea*/
+.filha textarea{
+    width: 300px;
+    background-color: black;
+    color: #eead2d;
+    padding: 2px 0px 0px 15px;
+}
+/*Mudando a cor do hr*/
+hr{
+    border-color: black;
+    height: 4px;
+    background-color: black;
+}
+
+calcular{
+    display: block;
+}
