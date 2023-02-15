@@ -1,0 +1,87 @@
+/*resetando o css*/
+*{
+    margin: 0;   
+    padding: 0;    
+    box-sizing: border-box;    
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #49beb7;
+}
+
+body{
+    background-image: url(/Imagens/login-background.webp); 
+}
+
+/*Aplicando flex-box no body*/
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/*Estilizando o formulario*/
+#login{
+    width: 500px;
+    height: 400px;
+    background-color:#085f63; 
+    margin-top: 250px;
+}
+
+#login hr{
+    margin-top: 50px;
+}
+
+/*Aplicando flex-box no formulario*/
+form #user, #password{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*Estilizando os inputs e label*/
+#user, #password{
+    margin: 20px;
+    font-size: 20px;
+}
+
+label{
+    margin: 12px;
+}
+
+#user2, #senha{
+    margin-top: 7px;
+}
+
+/*Centralizando os botoes e paragrafos*/
+.rdsociais{
+    margin: 40px 0px 0px 140px;
+}
+
+.rdsociais button{
+    height: 50px;
+    width: 70px;
+}
+
+p{
+    margin: 15px 0px -25px 142px;
+}
+
+.conectar {
+  display: flex;
+  justify-content: center;
+}
+
+.conectar button{
+    height: 50px;
+    width: 70px;
+}
+
+
+
+.conectar :hover, 
+.rdsociais :hover{
+    background-color: #49beb7;
+    color: white;
+}
+

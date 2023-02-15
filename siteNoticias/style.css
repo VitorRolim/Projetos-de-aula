@@ -1,9 +1,71 @@
+
+/*Padronizando o CSS*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*Pagina inicial*/
+#container{
+    width: 1820px;
+    height: 2000px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    font-size: 20px;
+}
+
+.home{
+    display: flex;
+}
+
+/*Personalizando o container - Primeira noticia*/
+.noticia_1 {
+    padding: 20px;
+    margin: 10px;
+}
+
+.imagem1{
+    margin: 20px 10px 50px 2px;
+    max-height: 1920px;
+    max-width: 750px;
+}
+
+.imagem2{
+    margin: 20px 10px 50px 2px;
+    max-height: 1920px;
+    max-width: 400px;
+}
+
+.noticia_1 h1, p{
+    padding: 2px;
+}
+
+/*àrea lateral mudando tamanho das fontes e imagens*/
+.area_lateral{
+    align-content: right;
+    margin-top: 40px;
+    font-size: 15px;
+}
+
+.area_lateral p{
+    margin-top: 10px;
+}
+
+.notica_lateral_1{
+    margin-bottom: 50px;
+}
+
+/*Personalizando a terceira noticia*/
+.noticia_3{
+    padding: 25px;
+    background-size:  center;   
+}
+
+
+/*Personalizando o nav*/
 nav{
     margin: 27px auto 0;
     position: relative;
@@ -13,6 +75,7 @@ nav{
     border-radius: 8px;
     font-size: 0;
 }
+
 
 nav a{
     line-height: 50px;
@@ -92,4 +155,7 @@ body{
 span{
     color: #2bd6b4;
 }
+
+
+
 
