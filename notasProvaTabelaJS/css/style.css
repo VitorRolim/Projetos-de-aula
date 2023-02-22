@@ -64,8 +64,9 @@ button:hover{
 #resultado{
     font-family: 'Heebo', sans-serif;
     font-family: 'Poppins', sans-serif;
-    width: 535px;
+    background-color: white;
+    width: 525px;
     height: 300px;
     margin: 10px 0px 0px 0px;
-    border: 1px solid black;
+    border: 2px solid black;
 }
