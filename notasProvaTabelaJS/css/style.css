@@ -1,0 +1,71 @@
+/*Zerando o css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/*Criando um background*/
+body{
+    background-image: url(/image/fundo-materia-01.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+}
+/*Criando o container para centralizar a div filha*/
+#container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+/*utilizando a margem para separar a div filha*/
+.filha{
+    margin-top: 100px;
+}
+
+/*Colocando uma fonte diferente no h1*/
+.filha h1{
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*Aumentando a largura da tabela*/
+tr:first-child{
+    background-color: rgb(131, 195, 115);
+}
+/*Deixando so uma borda*/
+table{
+    border-collapse: collapse;
+}
+/*Mudando a cor das tabelas*/
+th{
+    background-color: rgb(131, 195, 115);
+    height: 40px;
+}
+
+td input{
+    height: 40px;
+}
+/*Separando, aumentando o tamanho e mudando a cor do button*/
+button{
+    margin-top: 5px;
+    height: 40px;
+    padding: 5px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(131, 195, 115);
+}
+
+
+/*Estilizando a div que exibe os resultados das notas*/
+#resultado{
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    width: 535px;
+    height: 300px;
+    margin: 10px 0px 0px 0px;
+    border: 1px solid black;
+}
