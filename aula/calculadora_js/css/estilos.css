@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/*Estilizando o fundo da calculadora*/
+
+#container{
+    height: 450px;
+    width: 420px;
+    margin: 20px auto 0 auto;
+    background-color: #141414;
+    border-radius: 20px;
+}
+/*Estilizando a saida dos numeros da calculadora*/
+#saida_num{
+    width: 400px;
+    height: 50px;
+    margin: 14px 10px 0px 10px;
+    border-radius: 5px;
+    float: right;
+    align-items: right;
+}
+
+.btn_acao{
+    display: inline;
+    margin: 10px;
+}
+/*Deixando os botões na mesma linha*/
+#btn_valor{
+    display: inline;
+}
+
+/*Estilizando os botões*/
+.btn_1, .btn_2, .btn_igual, .btn_maior{
+    background-color: #FCF0CC;
+}
+
+.btn_1:hover, 
+.btn_2:hover, 
+.btn_igual:hover, 
+.btn_maior:hover{
+    background-color: #A8D5E2
+}
+
+/*Personalizando a primeira linha de botão*/
+.btn_1{
+    display:inline-block;
+    margin: 1px;
+    height: 50px;
+    width: 70px;
+}
+
+/*Personalizando a segunda linha de botão*/
+.btn_2{
+    display:inline-block;
+    margin: 12px;
+    height: 50px;
+    width: 70px;
+}
+
+/*Personalizando o botão IGUAL*/
+.btn_igual{
+    float: right;
+    margin: 10px 40px 5px 5px;
+    height: 150px;
+    width: 65px;
+}
+
+/*Personalizando o botão C e o botão zero*/
+.btn_maior{
+    margin: 10px 10px 10px 5px;
+    height: 50px;
+    width: 162px;
+    
+}
+
+input:disabled {
+	background: white;
+}
+
+/*MUdando o lado do placeholder*/
+input{
+    padding: 0px 0px 0px 340px;
+	float: right;
+}
+ 
+
+/*#65655E*/

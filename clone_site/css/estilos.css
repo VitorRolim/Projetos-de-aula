@@ -1,0 +1,39 @@
+/*Resetando o css*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*Colocando a nav na horizontal*/
+#navegacao ul li{
+    display: inline;
+    padding: 2px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+/*Separando os botoes*/
+.sessao{
+    float: right;
+    background-color: blue;
+    color: white;
+    border-radius: 15px;
+    border: 1px solid red;
+}
+
+/*Personalizando os links*/
+#navegacao ul li a{
+    text-decoration: none;
+}
+#navegacao ul li a:link{
+    color: black;
+}
+
+#navegacao ul li a:hover{
+    color: blue;
+}
+
+
