@@ -1,0 +1,136 @@
+*{
+  font-family: Helvetica;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*Estilizando o fundo do body*/
+body{
+    background-image: url(/image/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Criando o container para centralizar a div*/
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;/*CENTRALIZA NA HORIZONTAL*/
+    align-items: center;/*CENTRALIZA NA VERTICAL*/
+    height: 75vh;
+    margin-left: 60px;
+}
+
+
+
+/*Estilizando a tabela*/
+#jogos table{
+    border-collapse: collapse;
+    border-radius: 15px;
+}
+
+tr, th{
+    border: 2px solid #F9F9F9;
+    padding: 2px;
+    background-color: #044B7F;
+}
+
+/*Dando espaço para o button*/
+td{
+    padding: 10px;
+    text-align: center;
+}
+
+/*Mudando a cor do button*/
+button{
+    padding: .6rem 1.2rem;
+    background-color: #34E5FF;
+    color: black;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    opacity: .9;
+    font-size: 1rem;
+    transition: 0.8s;
+}
+/*Mudando a cor do hover do btn comprar*/
+#btn1:hover{
+    background-color: yellow;
+}
+a:link, a:visited, a:active{
+    text-decoration: none;
+    color: black;
+}
+
+/*CRIANDO OS MODALS*/
+
+#fade,
+#fade2,
+#fade3,
+#modal,
+#modal2,
+#modal3{
+     transition: .5s;
+     opacity: 1;
+     pointer-events: all;
+}
+
+button:hover{
+    opacity: 1;
+}
+
+/*Estilizando o modal*/
+#btn2, #btn3, #btn4{
+background-color: #007bff;
+}
+
+/*Background do modal*/
+#fade,#fade2,#fade3{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;/*Fica na frente dos elementos*/
+}
+
+/*Criando o modal*/
+#modal,#modal2,#modal3{
+    position: fixed;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    background-color: #9DA2AB;
+    color: #F5F1ED;
+    width: 500px;
+    max-width: 90%;
+    padding: 1.2rem;
+    border-radius: .5rem;
+}
+
+/*alinhando o header do modal*/
+.modal-header, .modal-header2, .modal-header3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+#modal.hide,#modal2.hide2-1, #modal3.hide3-1,
+#fade.hide,#fade2.hide2, #fade3.hide3{
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal.hide,#modal2.hide2-1,#modal3.hide3-1{
+    top: 0;
+}
+
+
+
+

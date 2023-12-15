@@ -1,5 +1,4 @@
-const turnOn = document.getElementById('turnOn');
-const turnOff = document.getElementById('turnOff');
+const turnOnOff = document.getElementById('turnOnOff');
 const lamp = document.getElementById('lamp');
 const fix = document.getElementById('fix');
 
@@ -28,6 +27,16 @@ function desligarLampada(){
     
 }
 
+function ligaDesligaLampada(){
+    if(turnOnOff.textContent == 'Ligar'){
+        ligarLampada();
+        turnOnOff.textContent = 'Desligar'
+    }else{
+        desligarLampada();
+        turnOnOff.textContent = 'Ligar'
+    }
+}
+
 function lampadaQuebrada(){
     
     lamp.src = '/image/quebrada1.png'
@@ -38,8 +47,7 @@ function consertarLampada(){
     window.location.reload(true);
 }
 
-turnOn.addEventListener('click', ligarLampada)
-turnOff.addEventListener('click', desligarLampada)
+turnOnOff.addEventListener('click', ligaDesligaLampada)
 fix.addEventListener('click', consertarLampada)
 lamp.addEventListener('mouseover', ligarLampada)
 lamp.addEventListener('mouseleave', desligarLampada)
